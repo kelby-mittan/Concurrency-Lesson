@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XXz-9z-UFa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Astronomy Photo of the Day-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsH-nh-OAx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-x7-xus" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j9d-5M-TCS">
+                                                <rect key="frame" x="0.0" y="1" width="414" height="311"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-ps-jhI">
+                                                <rect key="frame" x="8" y="321.5" width="398" height="478.5"/>
+                                                <string key="text">Explanation: Beautiful spiral galaxy NGC 6744 is nearly 175,000 light-years across, larger than our own Milky Way. It lies some 30 million light-years distant in the southern constellation Pavo and appears as only a faint, extended object in small telescopes. We see the disk of the nearby island universe tilted towards our line of sight in this remarkably detailed galaxy portrait, a telescopic view that spans an area about the angular size of a full moon. In it, the giant galaxy's elongated yellowish core is dominated by the light from old, cool stars. Beyond the core, grand spiral arms are filled with young blue star clusters and speckled with pinkish star forming regions. An extended arm sweeps past a smaller satellite galaxy (NGC 6744A) at the lower right. NGC 6744's galactic companion is reminiscent of the Milky Way's satellite galaxy the Large Magellanic Cloud.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="GHb-ps-jhI" secondAttribute="bottom" constant="8" id="1h4-iH-ire"/>
+                                            <constraint firstItem="j9d-5M-TCS" firstAttribute="leading" secondItem="dE8-x7-xus" secondAttribute="leading" id="4Zn-q1-Zlu"/>
+                                            <constraint firstAttribute="trailing" secondItem="j9d-5M-TCS" secondAttribute="trailing" id="55S-sb-vYN"/>
+                                            <constraint firstItem="GHb-ps-jhI" firstAttribute="leading" secondItem="dE8-x7-xus" secondAttribute="leading" constant="8" id="BWY-CV-QxP"/>
+                                            <constraint firstAttribute="trailing" secondItem="GHb-ps-jhI" secondAttribute="trailing" constant="8" id="EpS-h5-37D"/>
+                                            <constraint firstItem="j9d-5M-TCS" firstAttribute="top" secondItem="dE8-x7-xus" secondAttribute="top" id="bwM-p2-MLn"/>
+                                            <constraint firstItem="GHb-ps-jhI" firstAttribute="top" secondItem="j9d-5M-TCS" secondAttribute="bottom" constant="8" id="u7T-U4-S17"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dE8-x7-xus" secondAttribute="trailing" id="1Zf-S2-7uF"/>
+                                    <constraint firstItem="dE8-x7-xus" firstAttribute="width" secondItem="HsH-nh-OAx" secondAttribute="width" id="3GI-fV-GvJ"/>
+                                    <constraint firstItem="dE8-x7-xus" firstAttribute="top" secondItem="HsH-nh-OAx" secondAttribute="top" id="IAu-7U-TFc"/>
+                                    <constraint firstItem="dE8-x7-xus" firstAttribute="bottom" secondItem="OdX-08-gxm" secondAttribute="bottom" id="N5B-4k-Alt"/>
+                                    <constraint firstItem="dE8-x7-xus" firstAttribute="leading" secondItem="HsH-nh-OAx" secondAttribute="leading" id="VlN-Sf-zhk"/>
+                                    <constraint firstAttribute="bottom" secondItem="dE8-x7-xus" secondAttribute="bottom" id="oO3-wL-o87"/>
+                                    <constraint firstItem="dE8-x7-xus" firstAttribute="height" secondItem="HsH-nh-OAx" secondAttribute="height" priority="750" id="u3N-6w-tQU"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0uT-ub-AYw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OdX-08-gxm"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HsH-nh-OAx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ts-qr-MyL"/>
+                            <constraint firstItem="j9d-5M-TCS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="M4B-EH-YsV"/>
+                            <constraint firstItem="HsH-nh-OAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mbp-rW-Zkt"/>
+                            <constraint firstItem="HsH-nh-OAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OS2-v2-L2d"/>
+                            <constraint firstAttribute="bottom" secondItem="HsH-nh-OAx" secondAttribute="bottom" id="RYB-ae-Nxd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Astronomy Photo of the Day" id="avx-Jf-URm">
+                        <barButtonItem key="rightBarButtonItem" title="Load Image" id="kb3-JB-PTD">
+                            <connections>
+                                <action selector="loadImage:" destination="BYZ-38-t0r" id="WBV-Hq-4xC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="planetImageView" destination="j9d-5M-TCS" id="oHt-xZ-Wqw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gWv-XH-g7Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XXz-9z-UFa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uA9-ps-bil">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Fi-Vu-oyv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUf-MA-MYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
